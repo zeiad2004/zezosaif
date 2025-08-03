@@ -1,0 +1,99 @@
+body{
+     background-image: 
+     url(images/pattern-background-desktop.svg)  ,
+     linear-gradient(hsl(225, 100%, 94%))
+    ;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 30%;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+     
+}
+.container .image img{
+     
+    width: 100%;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.icon{
+    display: flex;
+    background-color:hsl(225, 100%, 98%) ;
+    border-radius: 15px;
+    padding: 15px;
+    height: 50px;
+    width: 80%;
+     
+}
+.icon img{
+    height: 50px;
+}
+.text {
+     
+    margin-left: 20px;
+}
+.text .price{
+ margin-top: 20px;
+ color:  hsl(224, 23%, 55%);
+ position: relative;
+ top: 5px;
+}
+.text .an{
+    font-weight: 900;
+    text-transform: capitalize;
+    color:  hsl(223, 47%, 23%);
+}
+.icon a{
+    align-self:  center;
+    margin-left: auto;
+}
+button{
+    margin-top: 20px;
+    background-color:  hsl(245, 75%, 52%);
+    color: white;
+    height: 40px;
+    border-radius: 10px;
+    flex-grow: 1;
+    box-shadow: 0px 10px 50px -10px rgb(11, 11, 224) ;
+    
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+}
+.content p{
+    color:hsl(224, 23%, 55%) ; 
+}
+.cancle{
+    
+    padding: 30px;
+    text-decoration: none;
+    color: hsl(223, 47%, 23%);
+    font-weight: 600;
+}
+.content h1{
+    text-transform: capitalize;
+}
+@media(max-width:600px){
+    .container{
+         width:90%; 
+    }
+}
+@media(min-width:600px)and (max-width:900px){
+    .container{
+        width: 60%;
+    }
+}
